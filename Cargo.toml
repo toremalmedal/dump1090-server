@@ -1,0 +1,53 @@
+[package]
+name = "dump1090-server"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "dump1090-server"
+path = "src/main.rs"
+
+
+[features]
+default = []
+# Enable this when building a wasm client
+wasm = ["tonic-web-wasm-client", "tonic/codegen", "tonic-prost"]
+
+server = [
+  "serde_json",
+  "tonic/transport",
+  "tonic/router",
+  "tonic/server",
+  "tonic/tls-aws-lc",
+  "tonic-prost",
+  "tonic-reflection",
+  "tokio",
+  "tokio/rt-multi-thread",
+  "tokio/fs",
+  "tonic-web",
+  "tower-http"
+]
+
+[dependencies]
+http = "1.4.0"
+prost = "0.14.3"
+reqwest = "0.13.1"
+
+# Optional server dependencies
+serde_json = { version ="1.0.149", optional=true}
+
+tokio = { version = "1.49.0", optional = true,  default-features=false }
+tonic = { version = "0.14.2", optional = true, default-features=false }
+tonic-prost = {version = "0.14.2", optional = true}
+tonic-reflection = {version = "0.14.2", optional = true}
+tonic-web = { version = "0.14.2", optional = true}
+
+
+# Web client dependencies
+tonic-web-wasm-client = { version = "0.8.0", optional = true }
+tower-http = { version = "0.6.8", optional=true, features = ["cors"] }
+
+
+[build-dependencies]
+tonic-prost-build = "0.14.2"
+
