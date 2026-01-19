@@ -1,14 +1,15 @@
 # dump1090-server
 
 Serves tracked airplanes from dump1090-fa's aircraft.json.
+See README-dump1090-json.md for dump1090s output files.
 
 ## Environment variables
 
 - GRCP_SERVER_URL - url for the gRCP server
-- CERT_PATH - path for certificate
-- KEY_PATH - path for private key
-- ALLOW_ORIGIN - domain to add to allow origin header
-- JSON_DIR - directory where aircraft.json is stored
+- CERT_PATH - path for certificate. Optional, starts server without tls if omitted.
+- KEY_PATH - path for private key. Optional, starts server without tls if omitted.
+- ALLOW_ORIGIN - domain to add to allow origin header. Optional, defaults to "*".
+- JSON_DIR - directory where aircraft.json is stored. Optional, defaults to "./test-data".
 
 ## Run
 Generate self signed certificate for localhost:
@@ -26,6 +27,7 @@ docker run -e JSON_DIR="./data" -e GRPC_SERVER_URL="0.0.0.0:50051" -e CERT_PATH=
 ```
 
 Test service with grpcurl:
+
 ```
 # from project folder
 # list available services 

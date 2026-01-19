@@ -27,7 +27,7 @@ impl FlightService for MyFlightService {
         // Use provided json_dir or the test-data folder
         let json_dir = std::env::var("JSON_DIR").unwrap_or("./test-data".to_string());
         let aircraft_path = json_dir + "/aircraft.json";
-        println!("{}", aircraft_path);
+
         let file_content = tokio::fs::read_to_string(aircraft_path)
             .await
             .map_err(|e| Status::internal(format!("Failed to read JSON file: {}", e)))?;
