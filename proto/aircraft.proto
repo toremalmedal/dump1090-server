@@ -9,16 +9,16 @@ service FlightService {
 message Empty {}
 
 message Aircraft {
-  string hex = 1;                     
-  optional string flight = 2;         
-  optional double lat = 3;            
-  optional double lon = 4;            
-  optional double track = 5;          
-  optional double track_rate = 6;     
+  string hex = 1;
+  optional string flight = 2;
+  optional double lat = 3;
+  optional double lon = 4;
+  optional double track = 5;
+  optional double track_rate = 6;
 }
 
 message FlightData {
-  double now = 1;                     
-  int32 messages = 2;                 
-  repeated Aircraft aircraft = 3;     
+  double now = 1;
+  int32 messages = 2;
+  repeated Aircraft aircraft = 3;
 }

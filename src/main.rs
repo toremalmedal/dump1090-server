@@ -16,7 +16,6 @@ pub mod flight {
     tonic::include_proto!("dump1090_server");
 }
 
-#[derive(Default)]
 pub struct MyFlightService;
 
 #[tonic::async_trait]
@@ -28,6 +27,7 @@ impl FlightService for MyFlightService {
         // Use provided json_dir or the test-data folder
         let json_dir = std::env::var("JSON_DIR").unwrap_or("./test-data".to_string());
         let aircraft_path = json_dir + "/aircraft.json";
+        println!("{}", aircraft_path);
         let file_content = tokio::fs::read_to_string(aircraft_path)
             .await
             .map_err(|e| Status::internal(format!("Failed to read JSON file: {}", e)))?;
@@ -76,7 +76,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     };
 
     let addr = server_url.parse()?;
-    let flight_service = MyFlightService::default();
+    let flight_service = MyFlightService;
 
     let flight_service_reflector = tonic_reflection::server::Builder::configure()
         .register_encoded_file_descriptor_set(FILE_DESCRIPTOR_SET)
@@ -124,6 +124,9 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     };
 
     println!("FlightService gRPC server listening on {}", addr);
+    let json_dir = std::env::var("JSON_DIR").unwrap_or("./test-data".to_string());
+    let aircraft_path = json_dir + "/aircraft.json";
+    println!("Serving flight data from: {}", aircraft_path);
 
     let _ = server.await;
 
