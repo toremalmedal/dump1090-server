@@ -1,0 +1,11 @@
+{ "now" : 1768888851.4,
+  "messages" : 38107,
+  "aircraft" : [
+    {"hex":"461e17","alt_baro":40000,"alt_geom":39400,"gs":450.5,"track":258.9,"baro_rate":-64,"nav_qnh":1013.2,"nav_altitude_mcp":40000,"nav_altitude_fms":40000,"nav_modes":["vnav"],"version":0,"nac_v":2,"mlat":[],"tisb":[],"messages":7,"seen":14.9,"rssi":-35.0},
+    {"hex":"47a518","flight":"NOZ521  ","alt_baro":31000,"alt_geom":30625,"gs":439.3,"ias":293,"tas":456,"mach":0.788,"track":78.8,"track_rate":-0.41,"roll":-9.0,"mag_heading":75.4,"baro_rate":0,"geom_rate":0,"squawk":"2540","emergency":"none","category":"A3","nav_qnh":1013.6,"nav_altitude_mcp":12000,"nav_altitude_fms":31008,"nav_heading":78.8,"lat":59.242936,"lon":8.557024,"nic":8,"rc":186,"seen_pos":4.2,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"mlat":[],"tisb":[],"messages":3051,"seen":1.9,"rssi":-33.5},
+    {"hex":"8966d4","category":"A5","version":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":707,"seen":256.9,"rssi":-35.9},
+    {"hex":"471f32","alt_baro":32350,"alt_geom":31900,"gs":420.9,"ias":250,"tas":404,"mach":0.700,"track":297.6,"track_rate":0.00,"roll":0.0,"mag_heading":295.8,"baro_rate":-1728,"geom_rate":-1728,"category":"A3","nav_qnh":1012.8,"nav_altitude_mcp":10016,"lat":58.619659,"lon":8.176752,"nic":8,"rc":186,"seen_pos":61.5,"version":2,"nic_baro":1,"nac_p":8,"nac_v":1,"sil":3,"sil_type":"perhour","mlat":[],"tisb":[],"messages":2039,"seen":61.1,"rssi":-30.2},
+    {"hex":"4aca75","alt_baro":25425,"alt_geom":25225,"gs":345.4,"ias":253,"tas":364,"mach":0.616,"track":70.2,"track_rate":-0.03,"roll":-0.4,"mag_heading":72.6,"baro_rate":-1792,"geom_rate":-1792,"squawk":"2542","category":"A3","nav_altitude_fms":12000,"lat":59.407778,"lon":9.032466,"nic":8,"rc":186,"seen_pos":49.7,"version":2,"nac_v":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":3864,"seen":35.9,"rssi":-34.8},
+    {"hex":"4acb45","category":"A3","version":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":5215,"seen":169.9,"rssi":-34.2}
+  ]
+}

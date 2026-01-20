@@ -1,0 +1,7 @@
+{ "now" : 1768887619.9,
+  "messages" : 21122,
+  "aircraft" : [
+    {"hex":"89659c","alt_baro":36000,"alt_geom":35800,"gs":492.3,"tas":484,"track":313.5,"track_rate":0.00,"roll":0.0,"baro_rate":0,"squawk":"3224","version":0,"nac_p":0,"nac_v":0,"sil":0,"sil_type":"unknown","mlat":[],"tisb":[],"messages":21,"seen":0.1,"rssi":-34.0},
+    {"hex":"4852f6","flight":"KLM54V  ","alt_baro":14150,"alt_geom":14225,"gs":292.3,"ias":246,"tas":300,"mach":0.480,"track":185.5,"track_rate":0.00,"roll":0.0,"mag_heading":185.6,"baro_rate":2432,"geom_rate":2464,"squawk":"0747","emergency":"none","category":"A3","nav_qnh":1013.6,"nav_altitude_mcp":28000,"nav_altitude_fms":28000,"nav_modes":["autopilot","vnav","tcas"],"lat":58.025456,"lon":8.179871,"nic":8,"rc":186,"seen_pos":3.3,"version":2,"nic_baro":1,"nac_p":11,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"mlat":[],"tisb":[],"messages":226,"seen":1.5,"rssi":-34.4}
+  ]
+}

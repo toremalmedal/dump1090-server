@@ -1,0 +1,8 @@
+{ "now" : 1768889392.1,
+  "messages" : 49033,
+  "aircraft" : [
+    {"hex":"8966c4","flight":"ETD19G  ","alt_baro":36000,"alt_geom":35475,"gs":490.1,"ias":284,"tas":484,"mach":0.852,"track":313.9,"track_rate":0.00,"roll":0.2,"mag_heading":309.6,"baro_rate":-96,"geom_rate":0,"squawk":"6605","emergency":"none","category":"A5","nav_qnh":1012.8,"nav_altitude_mcp":36000,"nav_modes":["autopilot","vnav","lnav","tcas"],"lat":57.647312,"lon":7.640194,"nic":8,"rc":186,"seen_pos":21.3,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"mlat":[],"tisb":[],"messages":682,"seen":10.9,"rssi":-35.4},
+    {"hex":"89667c","version":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":140,"seen":166.7,"rssi":-36.0},
+    {"hex":"461e17","category":"A3","version":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":7402,"seen":81.8,"rssi":-33.6}
+  ]
+}

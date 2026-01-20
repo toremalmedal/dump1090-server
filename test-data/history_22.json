@@ -1,0 +1,9 @@
+{ "now" : 1768889272.0,
+  "messages" : 47898,
+  "aircraft" : [
+    {"hex":"89667c","alt_baro":38000,"squawk":"3562","version":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":140,"seen":46.6,"rssi":-36.0},
+    {"hex":"4867c3","version":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":20,"seen":202.2,"rssi":-33.3},
+    {"hex":"461e17","flight":"FIN7EH  ","alt_baro":40000,"alt_geom":39375,"gs":450.8,"ias":239,"tas":446,"mach":0.792,"track":257.4,"track_rate":0.00,"roll":0.0,"mag_heading":256.8,"baro_rate":64,"geom_rate":32,"squawk":"1402","emergency":"none","category":"A3","nav_qnh":1013.6,"nav_altitude_mcp":40000,"nav_altitude_fms":40000,"nav_modes":["autopilot","vnav","tcas"],"lat":59.073859,"lon":7.827285,"nic":8,"rc":186,"seen_pos":0.4,"version":2,"nic_baro":1,"nac_p":11,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"mlat":[],"tisb":[],"messages":6953,"seen":0.1,"rssi":-27.9},
+    {"hex":"47a518","category":"A3","version":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":5736,"seen":202.9,"rssi":-32.6}
+  ]
+}

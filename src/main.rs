@@ -1,8 +1,11 @@
+use std::path;
+
 use flight::flight_service_server::{FlightService, FlightServiceServer};
-use flight::{Aircraft, Empty, FlightData};
+use flight::{Aircraft, Empty, FlightData, HistoricalData, Receiver};
 use http::{HeaderName, HeaderValue};
 use reqwest::Method;
 use serde_json::Value;
+use tokio::fs;
 use tonic::{
     Request, Response, Status,
     transport::{Identity, Server, ServerTlsConfig},
@@ -14,6 +17,35 @@ pub const FILE_DESCRIPTOR_SET: &[u8] =
     tonic::include_file_descriptor_set!("dump1090-server_binary");
 pub mod flight {
     tonic::include_proto!("dump1090_server");
+}
+
+fn parse_flight_data(data: Value) -> FlightData {
+    let now = data["now"].as_f64().unwrap_or(0.0);
+    let messages = data["messages"].as_i64().unwrap_or(0) as i32;
+
+    let mut aircraft_vec = Vec::new();
+    if let Some(aircrafts) = data["aircraft"].as_array() {
+        for a in aircrafts {
+            let aircraft = Aircraft {
+                hex: a["hex"].as_str().unwrap_or("").to_string(),
+                flight: a["flight"].as_str().map(|s| s.to_string()),
+                lat: a["lat"].as_f64(),
+                lon: a["lon"].as_f64(),
+                track: a["track"].as_f64(),
+                track_rate: a["track_rate"].as_f64(),
+            };
+            // Only include if hex exists
+            if !aircraft.hex.is_empty() {
+                aircraft_vec.push(aircraft);
+            }
+        }
+    }
+
+    FlightData {
+        now,
+        messages,
+        aircraft: aircraft_vec,
+    }
 }
 
 pub struct MyFlightService;
@@ -35,34 +67,67 @@ impl FlightService for MyFlightService {
         let data: Value = serde_json::from_str(&file_content)
             .map_err(|e| Status::internal(format!("Failed to parse JSON: {}", e)))?;
 
-        let now = data["now"].as_f64().unwrap_or(0.0);
-        let messages = data["messages"].as_i64().unwrap_or(0) as i32;
-
-        let mut aircraft_vec = Vec::new();
-        if let Some(aircrafts) = data["aircraft"].as_array() {
-            for a in aircrafts {
-                let aircraft = Aircraft {
-                    hex: a["hex"].as_str().unwrap_or("").to_string(),
-                    flight: a["flight"].as_str().map(|s| s.to_string()),
-                    lat: a["lat"].as_f64(),
-                    lon: a["lon"].as_f64(),
-                    track: a["track"].as_f64(),
-                    track_rate: a["track_rate"].as_f64(),
-                };
-                // Only include if hex exists
-                if !aircraft.hex.is_empty() {
-                    aircraft_vec.push(aircraft);
-                }
-            }
-        }
-
-        let flight_data = FlightData {
-            now,
-            messages,
-            aircraft: aircraft_vec,
-        };
+        let flight_data = parse_flight_data(data);
 
         Ok(Response::new(flight_data))
+    }
+
+    async fn get_historical_data(
+        &self,
+        _request: Request<Empty>,
+    ) -> Result<Response<HistoricalData>, Status> {
+        // Use provided json_dir or the test-data folder
+        let json_dir = std::env::var("JSON_DIR").unwrap_or("./test-data".to_string());
+
+        let mut entries = tokio::fs::read_dir(json_dir).await?;
+
+        let mut history = HistoricalData::default();
+
+        while let Some(entry) = entries.next_entry().await? {
+            let path = entry.path();
+            if let Some(p) = path.to_str()
+                && p.contains("history")
+            {
+                let file_content = tokio::fs::read_to_string(path)
+                    .await
+                    .map_err(|e| Status::internal(format!("Failed to read JSON file: {}", e)))?;
+
+                let data: Value = serde_json::from_str(&file_content)
+                    .map_err(|e| Status::internal(format!("Failed to parse JSON: {}", e)))?;
+
+                let flight_data = parse_flight_data(data);
+                history.flight_data.push(flight_data);
+            }
+        }
+        Ok(Response::new(history))
+    }
+
+    async fn get_receiver_data(
+        &self,
+        _request: Request<Empty>,
+    ) -> Result<Response<Receiver>, Status> {
+        // Use provided json_dir or the test-data folder
+        let json_dir = std::env::var("JSON_DIR").unwrap_or("./test-data".to_string());
+        let aircraft_path = json_dir + "/receiver.json";
+
+        let file_content = tokio::fs::read_to_string(aircraft_path)
+            .await
+            .map_err(|e| Status::internal(format!("Failed to read JSON file: {}", e)))?;
+
+        let data: Value = serde_json::from_str(&file_content)
+            .map_err(|e| Status::internal(format!("Failed to parse JSON: {}", e)))?;
+
+        let version = data["version"].as_f64().unwrap_or(0.0);
+        let refresh = data["refresh"].as_i64().unwrap_or(0) as i32;
+        let history = data["history"].as_i64().unwrap_or(0) as i32;
+
+        let receiver = Receiver {
+            version,
+            history,
+            refresh,
+        };
+
+        Ok(Response::new(receiver))
     }
 }
 

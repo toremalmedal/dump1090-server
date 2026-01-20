@@ -1,0 +1,8 @@
+{ "now" : 1768888460.9,
+  "messages" : 27564,
+  "aircraft" : [
+    {"hex":"471f32","alt_baro":38000,"alt_geom":37425,"gs":440.4,"tas":430,"track":298.8,"track_rate":0.06,"roll":0.0,"baro_rate":0,"squawk":"3707","emergency":"none","version":0,"nac_p":8,"nac_v":1,"sil":2,"sil_type":"unknown","mlat":[],"tisb":[],"messages":12,"seen":4.0,"rssi":-31.6},
+    {"hex":"4aca75","flight":"SAS4002 ","alt_baro":27000,"alt_geom":26750,"gs":346.2,"ias":250,"tas":370,"mach":0.628,"track":69.4,"track_rate":0.03,"roll":0.0,"mag_heading":71.4,"baro_rate":0,"geom_rate":0,"squawk":"2542","emergency":"none","category":"A3","nav_qnh":1013.6,"nav_altitude_mcp":27008,"nav_altitude_fms":27008,"nav_modes":["autopilot","vnav","tcas"],"lat":59.216355,"lon":8.013769,"nic":8,"rc":186,"seen_pos":5.9,"version":2,"nic_baro":1,"nac_p":11,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"mlat":[],"tisb":[],"messages":118,"seen":0.0,"rssi":-34.4},
+    {"hex":"4acb45","flight":"SAS15E  ","alt_baro":23000,"alt_geom":22875,"gs":346.3,"ias":250,"tas":346,"mach":0.580,"track":38.0,"track_rate":0.00,"roll":-0.2,"mag_heading":37.6,"baro_rate":-64,"geom_rate":-32,"squawk":"2562","emergency":"none","category":"A3","nav_qnh":1012.8,"nav_altitude_mcp":23008,"lat":58.846730,"lon":9.020325,"nic":8,"rc":186,"seen_pos":0.1,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":3,"mlat":[],"tisb":[],"messages":4210,"seen":0.1,"rssi":-20.5}
+  ]
+}

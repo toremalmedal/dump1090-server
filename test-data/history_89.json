@@ -1,0 +1,7 @@
+{ "now" : 1768887680.0,
+  "messages" : 22552,
+  "aircraft" : [
+    {"hex":"89659c","flight":"ETD93C  ","alt_baro":36000,"alt_geom":35800,"gs":493.8,"ias":285,"tas":486,"mach":0.852,"track":313.2,"track_rate":0.00,"roll":0.2,"mag_heading":310.3,"baro_rate":0,"geom_rate":0,"squawk":"3224","emergency":"none","category":"A5","nav_qnh":1013.6,"nav_altitude_mcp":36000,"nav_heading":310.1,"lat":57.684952,"lon":7.747850,"nic":0,"rc":0,"seen_pos":0.2,"version":2,"nic_baro":1,"nac_p":0,"nac_v":0,"sil":0,"sil_type":"perhour","gva":0,"sda":2,"mlat":[],"tisb":[],"messages":951,"seen":0.0,"rssi":-32.2},
+    {"hex":"4852f6","flight":"KLM54V  ","alt_baro":16650,"alt_geom":16675,"gs":304.4,"ias":248,"tas":314,"mach":0.508,"track":185.5,"track_rate":0.03,"roll":0.0,"mag_heading":186.0,"baro_rate":2560,"geom_rate":2592,"squawk":"0747","emergency":"none","category":"A3","nav_qnh":1013.6,"nav_altitude_mcp":28000,"nav_altitude_fms":28000,"nav_modes":["autopilot","vnav","tcas"],"lat":57.940032,"lon":8.164398,"nic":8,"rc":186,"seen_pos":1.7,"version":2,"nic_baro":1,"nac_p":11,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"mlat":[],"tisb":[],"messages":726,"seen":0.3,"rssi":-30.3}
+  ]
+}

@@ -1,0 +1,8 @@
+{ "now" : 1768886658.7,
+  "messages" : 14530,
+  "aircraft" : [
+    {"hex":"4787aa","version":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":112,"seen":73.1,"rssi":-35.7},
+    {"hex":"478f43","category":"A5","version":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":2357,"seen":67.6,"rssi":-34.0},
+    {"hex":"440af5","flight":"TAY3SL  ","alt_baro":39000,"alt_geom":38375,"gs":433.0,"ias":234,"tas":428,"mach":0.760,"track":32.6,"track_rate":0.00,"roll":0.0,"mag_heading":31.8,"baro_rate":0,"geom_rate":0,"squawk":"0244","emergency":"none","category":"A3","nav_qnh":1013.6,"nav_altitude_mcp":39008,"nav_altitude_fms":39008,"nav_heading":30.9,"lat":58.337128,"lon":8.693375,"nic":8,"rc":186,"seen_pos":8.0,"version":2,"nic_baro":1,"nac_p":11,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"mlat":[],"tisb":[],"messages":3968,"seen":1.4,"rssi":-27.8}
+  ]
+}

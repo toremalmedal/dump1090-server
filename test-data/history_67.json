@@ -1,0 +1,9 @@
+{ "now" : 1768887019.1,
+  "messages" : 20861,
+  "aircraft" : [
+    {"hex":"4aca6e","category":"A3","version":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":1837,"seen":116.5,"rssi":-34.4},
+    {"hex":"4aca70","category":"A3","version":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":2512,"seen":77.1,"rssi":-33.0},
+    {"hex":"4bb153","category":"A5","version":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":339,"seen":298.9,"rssi":-35.3},
+    {"hex":"440af5","flight":"TAY3SL  ","alt_baro":29850,"alt_geom":30225,"gs":416.9,"ias":270,"tas":418,"mach":0.716,"track":33.2,"track_rate":0.00,"roll":0.5,"mag_heading":36.2,"baro_rate":-2304,"geom_rate":-2208,"squawk":"0244","emergency":"none","category":"A3","nav_qnh":1013.6,"nav_altitude_mcp":12000,"nav_heading":33.0,"lat":58.937347,"lon":9.439453,"nic":8,"rc":186,"seen_pos":10.5,"version":2,"nic_baro":1,"nac_p":11,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"mlat":[],"tisb":[],"messages":5614,"seen":9.5,"rssi":-33.8}
+  ]
+}

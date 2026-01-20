@@ -1,0 +1,6 @@
+{ "now" : 1768888190.6,
+  "messages" : 23258,
+  "aircraft" : [
+    {"hex":"4acb45","flight":"SAS15E  ","alt_baro":15250,"alt_geom":15250,"gs":336.0,"ias":272,"mach":0.544,"track":37.4,"mag_heading":35.2,"baro_rate":3136,"geom_rate":3136,"squawk":"2562","emergency":"none","nav_qnh":1012.8,"nav_altitude_mcp":23008,"lat":58.501825,"lon":8.508453,"nic":8,"rc":186,"seen_pos":0.8,"version":0,"nic_baro":1,"nac_p":8,"nac_v":1,"sil":2,"sil_type":"unknown","mlat":[],"tisb":[],"messages":34,"seen":0.8,"rssi":-26.3}
+  ]
+}

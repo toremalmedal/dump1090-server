@@ -1,0 +1,10 @@
+{ "now" : 1768888761.3,
+  "messages" : 36254,
+  "aircraft" : [
+    {"hex":"47a518","flight":"NOZ521  ","alt_baro":31000,"alt_geom":30625,"gs":439.1,"ias":293,"tas":456,"mach":0.788,"track":81.2,"track_rate":0.00,"roll":0.2,"mag_heading":79.5,"baro_rate":0,"geom_rate":0,"squawk":"2540","emergency":"none","category":"A3","nav_qnh":1013.6,"nav_altitude_mcp":31008,"nav_altitude_fms":31008,"nav_heading":78.8,"lat":59.216309,"lon":8.220703,"nic":8,"rc":186,"seen_pos":0.3,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"mlat":[],"tisb":[],"messages":1580,"seen":0.0,"rssi":-24.0},
+    {"hex":"8966d4","category":"A5","version":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":707,"seen":166.7,"rssi":-35.9},
+    {"hex":"471f32","flight":"WZZ2859 ","alt_baro":33175,"alt_geom":32725,"gs":428.5,"ias":250,"tas":410,"mach":0.716,"track":297.5,"track_rate":-0.03,"roll":-0.4,"mag_heading":295.1,"baro_rate":-2112,"geom_rate":-2144,"squawk":"3707","emergency":"none","category":"A3","nav_qnh":1012.8,"nav_altitude_mcp":10016,"lat":58.592926,"lon":8.274920,"nic":8,"rc":186,"seen_pos":0.8,"version":2,"nic_baro":1,"nac_p":8,"nac_v":1,"sil":3,"sil_type":"perhour","gva":1,"sda":3,"mlat":[],"tisb":[],"messages":1803,"seen":0.3,"rssi":-20.9},
+    {"hex":"4aca75","flight":"SAS4002 ","alt_baro":26700,"alt_geom":26475,"gs":348.6,"ias":253,"tas":372,"mach":0.632,"track":70.2,"track_rate":0.00,"roll":0.0,"mag_heading":72.6,"baro_rate":-2112,"geom_rate":-2016,"squawk":"2542","emergency":"none","category":"A3","nav_qnh":1013.6,"nav_altitude_mcp":12000,"nav_altitude_fms":12000,"nav_modes":["autopilot","vnav","tcas"],"lat":59.385945,"lon":8.913606,"nic":8,"rc":186,"seen_pos":0.0,"version":2,"nic_baro":1,"nac_p":11,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"mlat":[],"tisb":[],"messages":3725,"seen":0.0,"rssi":-32.6},
+    {"hex":"4acb45","category":"A3","version":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":5215,"seen":79.8,"rssi":-34.2}
+  ]
+}

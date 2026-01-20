@@ -1,0 +1,7 @@
+{ "now" : 1768886178.1,
+  "messages" : 7357,
+  "aircraft" : [
+    {"hex":"4ab561","flight":"SAS2983 ","alt_baro":12100,"alt_geom":12150,"gs":210.8,"ias":180,"tas":214,"mach":0.340,"track":143.3,"roll":0.0,"mag_heading":140.4,"baro_rate":960,"geom_rate":960,"squawk":"0246","category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":12992,"lat":57.925735,"lon":8.622584,"nic":8,"rc":186,"seen_pos":9.5,"version":2,"nic_baro":1,"nac_p":11,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"mlat":[],"tisb":[],"messages":638,"seen":8.1,"rssi":-30.9},
+    {"hex":"478f0e","flight":"WIF432  ","alt_baro":23975,"alt_geom":23875,"gs":344.3,"ias":228,"tas":326,"mach":0.540,"track":260.0,"track_rate":-0.06,"roll":-0.9,"mag_heading":255.2,"baro_rate":0,"geom_rate":-32,"squawk":"0256","emergency":"none","category":"A2","nav_altitude_mcp":24000,"lat":59.063095,"lon":8.004089,"nic":8,"rc":186,"seen_pos":0.3,"version":2,"nic_baro":1,"nac_p":11,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"mlat":[],"tisb":[],"messages":6719,"seen":0.1,"rssi":-28.0}
+  ]
+}

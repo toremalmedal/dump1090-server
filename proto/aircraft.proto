@@ -4,6 +4,8 @@ package dump1090_server;
 
 service FlightService {
   rpc GetFlightData(Empty) returns (FlightData);
+  rpc GetReceiverData(Empty) returns (Receiver);
+  rpc GetHistoricalData(Empty) returns (HistoricalData);
 }
 
 message Empty {}
@@ -17,8 +19,18 @@ message Aircraft {
   optional double track_rate = 6;
 }
 
+message Receiver {
+  double version = 1;
+  int32 refresh = 2;
+  int32 history = 3;
+}
+
 message FlightData {
   double now = 1;
   int32 messages = 2;
   repeated Aircraft aircraft = 3;
+}
+
+message HistoricalData {
+  repeated FlightData flight_data = 1;
 }

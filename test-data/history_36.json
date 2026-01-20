@@ -1,0 +1,9 @@
+{ "now" : 1768889692.5,
+  "messages" : 52279,
+  "aircraft" : [
+    {"hex":"39bdb5","alt_baro":34325,"alt_geom":33500,"gs":414.8,"ias":253,"mach":0.740,"track":203.3,"mag_heading":199.7,"baro_rate":672,"geom_rate":832,"squawk":"0742","nav_qnh":1013.0,"nav_altitude_mcp":40000,"version":0,"nac_p":8,"nac_v":1,"sil":2,"sil_type":"unknown","mlat":[],"tisb":[],"messages":38,"seen":1.3,"rssi":-34.3},
+    {"hex":"47873f","flight":"NOZ271  ","alt_baro":20825,"alt_geom":20725,"gs":354.1,"ias":266,"tas":356,"mach":0.588,"track":38.0,"track_rate":0.00,"roll":-0.4,"mag_heading":37.6,"baro_rate":960,"geom_rate":992,"squawk":"5320","emergency":"none","category":"A3","nav_qnh":1013.6,"nav_altitude_mcp":20992,"nav_altitude_fms":21008,"nav_heading":37.3,"lat":58.732040,"lon":8.841425,"nic":8,"rc":186,"seen_pos":0.2,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"mlat":[],"tisb":[],"messages":2540,"seen":0.2,"rssi":-18.5},
+    {"hex":"486495","category":"A3","version":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":671,"seen":134.1,"rssi":-34.9},
+    {"hex":"8966c4","category":"A5","version":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":683,"seen":288.0,"rssi":-35.8}
+  ]
+}

@@ -1,0 +1,8 @@
+{ "now" : 1768887169.3,
+  "messages" : 20875,
+  "aircraft" : [
+    {"hex":"4aca6e","alt_baro":33000,"gs":430.6,"ias":269,"tas":436,"mach":0.760,"track":134.5,"track_rate":0.00,"roll":0.5,"mag_heading":134.8,"baro_rate":64,"geom_rate":0,"squawk":"0245","category":"A3","version":2,"nac_v":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":1846,"seen":33.2,"rssi":-35.1},
+    {"hex":"4aca70","category":"A3","version":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":2512,"seen":227.3,"rssi":-33.0},
+    {"hex":"440af5","category":"A3","version":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":5619,"seen":120.6,"rssi":-34.3}
+  ]
+}

@@ -1,0 +1,6 @@
+{ "now" : 1768887589.9,
+  "messages" : 20972,
+  "aircraft" : [
+    {"hex":"4852f6","flight":"KLM54V  ","alt_baro":12850,"alt_geom":12925,"gs":289.4,"ias":249,"tas":298,"mach":0.476,"track":185.6,"track_rate":0.00,"roll":0.0,"mag_heading":185.6,"baro_rate":2752,"geom_rate":2752,"squawk":"0747","emergency":"none","category":"A3","nav_qnh":1013.6,"nav_altitude_mcp":28000,"nav_altitude_fms":28000,"nav_modes":["autopilot","vnav","tcas"],"lat":58.063442,"lon":8.186646,"nic":8,"rc":186,"seen_pos":1.6,"version":2,"nic_baro":1,"nac_p":11,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"mlat":[],"tisb":[],"messages":97,"seen":0.3,"rssi":-29.9}
+  ]
+}

@@ -1,0 +1,8 @@
+{ "now" : 1768889151.8,
+  "messages" : 45705,
+  "aircraft" : [
+    {"hex":"4867c3","version":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":20,"seen":82.0,"rssi":-33.3},
+    {"hex":"461e17","flight":"FIN7EH  ","alt_baro":40000,"alt_geom":39375,"gs":448.2,"ias":238,"tas":444,"mach":0.788,"track":257.8,"track_rate":0.03,"roll":0.0,"mag_heading":257.2,"baro_rate":0,"geom_rate":0,"squawk":"1402","emergency":"none","category":"A3","nav_qnh":1013.6,"nav_altitude_mcp":40000,"nav_altitude_fms":40000,"nav_modes":["autopilot","vnav","tcas"],"lat":59.127182,"lon":8.298889,"nic":8,"rc":186,"seen_pos":0.3,"version":2,"nic_baro":1,"nac_p":11,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"mlat":[],"tisb":[],"messages":4900,"seen":0.0,"rssi":-24.9},
+    {"hex":"47a518","category":"A3","version":2,"sil_type":"perhour","mlat":[],"tisb":[],"messages":5736,"seen":82.7,"rssi":-32.6}
+  ]
+}
