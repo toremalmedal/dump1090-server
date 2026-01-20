@@ -1,11 +1,8 @@
-use std::path;
-
 use flight::flight_service_server::{FlightService, FlightServiceServer};
 use flight::{Aircraft, Empty, FlightData, HistoricalData, Receiver};
 use http::{HeaderName, HeaderValue};
 use reqwest::Method;
 use serde_json::Value;
-use tokio::fs;
 use tonic::{
     Request, Response, Status,
     transport::{Identity, Server, ServerTlsConfig},
